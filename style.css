@@ -3,14 +3,16 @@ html, body
 	margin: 0;
 	padding: 0;
 
-	background: #e4e4e4;
+	background: white;
 	font-family: 'Karla', sans-serif;
 }
 
 #container
 {
-	width: 100%;
+	width: 960px;
 	min-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 nav
@@ -35,6 +37,9 @@ nav ul li
 	color: #ffffff;
 	font-variant: small-caps;
 	display: inline;
+}
+nav ul li:hover{
+  cursor: pointer;
 }
 
 header
@@ -78,9 +83,6 @@ header #title
 {
 	position: absolute;
 	z-index: 1;
-	-moz-border-radius: 15px;
-  border-radius: 15px;
-  border: 1px solid white;
 }
 #portfolio_cycler img.active{
 	z-index: 3;
@@ -104,8 +106,9 @@ header #title
 footer
 {
 	width: 100%;
-	background: #111111;
+	background: #ccc;
 	color: #ffffff;
 	text-align: center;
 	float: left;
+	height: 400px;
 }
