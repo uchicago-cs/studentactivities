@@ -258,3 +258,16 @@ a:hover {
   width: 48%;
   padding: 1%;
 }
+
+/* table formatting */
+table {
+  width: 100%;
+}
+th {
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+
+td {
+  padding-bottom: 10px;
+}
