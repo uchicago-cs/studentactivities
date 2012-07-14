@@ -84,7 +84,6 @@ nav ul li:hover{
 
 header
 {
-	background: url(img/tiny_grid.png);
 	margin: 0;
 	padding: 0;
 	height: 250px;
@@ -97,6 +96,7 @@ header
 	height: 260px;
 	margin-left: auto;
 	margin-right: auto;
+	border-top: 10px solid #41AFE4;
 }
 
 #portfolio_cycler
@@ -227,4 +227,13 @@ a:hover {
 
 .no_bottom_border{
   border-bottom: none !important;
+}
+
+#title_text {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px;
+  padding-top: 0px;
 }
