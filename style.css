@@ -4,7 +4,7 @@ html, body
 	padding: 0;
 
 	background: #e4e4e4;
-	font-family: Helvetica;
+	font-family: 'Karla', sans-serif;
 }
 
 #container
@@ -21,16 +21,19 @@ nav
 nav ul
 {
 	margin: 0;
-	padding: 0;
+	padding: 8px;
 	background: #444444;
 	list-style-type: none;
 }
 
 nav ul li
 {
-	margin: 0;	
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 	background: #444444;
 	color: #ffffff;
+	font-variant: small-caps;
 	display: inline;
 }
 
@@ -40,6 +43,28 @@ header
 	margin: 0;
 	padding: 0;
 	height: 250px;
+}
+
+header #title
+{
+	/*
+	background: #ffffff;
+	width: 320px;
+	height: 160px;
+
+	border: 1px solid #d3d3d3;
+	border-bottom-left-radius: 15px;
+	box-shadow: 3px 3px 4px #000;
+
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	*/
+
+	font: 50px Karla;
+	color: #000;
+	text-align: right;
+	z-index: 100;
 }
 
 #portfolio_cycler
