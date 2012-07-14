@@ -72,14 +72,14 @@ nav ul li
 	padding-left: 10px;
 	padding-right: 10px;
 	/*background: #444444;*/
-	color: #111;
+	color: #111 !important;
 	font-variant: small-caps;
 	display: inline;
 	border-right: 3px solid #ccc;
 }
 nav ul li:hover{
   cursor: pointer;
-  color: #ccc;
+  color: #ccc !important;
 }
 
 header
@@ -140,7 +140,6 @@ footer
 {
 	width: 100%;
 	background: url(img/graphy.png);
-	color: #ffffff;
 	text-align: center;
 	float: left;
 	border-top: 10px solid black;
@@ -215,6 +214,7 @@ p {
 	position:relative;
 	top:1px;
 }
+
 a {
   color: #333;
   text-decoration: none;
