@@ -45,6 +45,9 @@ header
 #portfolio_cycler
 {
 	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
 }
 #portfolio_cycler img
 {
