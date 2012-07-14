@@ -184,7 +184,6 @@ p {
 }
 
 .donate_button {
-  font-size: 26px;
   width: 460px;
   height: 80px;
   -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -201,7 +200,7 @@ p {
 	display:inline-block;
 	color: #333;
 	font-family: Karla, sans-serif;
-	font-size:22px;
+	font-size:40px;
 	padding:6px 24px;
 	text-decoration:none;
 }
