@@ -56,7 +56,6 @@ nav ul
 	padding-top: 18px;
 	padding-left: 0px;
 	/*background: #444444;*/
-	background: url(img/graphy.png);
 	list-style-type: none;
 	
 }
@@ -85,7 +84,6 @@ nav ul li:hover{
 
 header
 {
-	background: url(img/tiny_grid.png);
 	margin: 0;
 	padding: 0;
 	height: 250px;
@@ -98,7 +96,7 @@ header
 	height: 260px;
 	margin-left: auto;
 	margin-right: auto;
-	background: url(img/graphy.png);
+	border-top: 10px solid #41AFE4;
 }
 
 #portfolio_cycler
@@ -151,6 +149,8 @@ h1 {
   color: #333;
   border-bottom: 10px solid #41AFE4;
   margin-right: 50px;
+  text-align: left;
+  background-color: transparent !important;
 }
 p {
   color: #333;
@@ -160,7 +160,7 @@ p {
 }
 
 #left {
-  border-right: 1px solid #ccc;
+  /* border-right: 1px solid #ccc;*/
 }
 
 .events_list {
@@ -216,7 +216,24 @@ p {
 	top:1px;
 }
 
-a {color: #41AFE4; text-decoration: none;}
-a:hover {color: #ff8900; text-decoration: none;}
-nav ul li a{color: #111;}
-nav ul li a:hover{color: #ccc};
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.no_bottom_border{
+  border-bottom: none !important;
+}
+
+#title_text {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px;
+  padding-top: 0px;
+}
