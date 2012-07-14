@@ -15,13 +15,27 @@ html, body
 
 #sponsors
 {
+	position: relative;
 	margin: 0 0 0 0;
 	padding: 0;
+	height: 150px;
+	bottom: -65px;
 	width: 960px;
 }
 
-#sponsors ul
+#sponsors_bg
 {
+	width: 960;
+	height: 150px;
+	bottom: 50px;
+	background: #fff;
+	position: absolute;
+	z-index: -1;
+}
+
+#sponsor_list
+{
+	position: absolute;
 	margin: 50% 0 50% 0;
 	padding: 0;
 	display: inline;
