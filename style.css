@@ -1,0 +1,56 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+
+	background: #e4e4e4;
+	font-family: Helvetica;
+}
+
+#container
+{
+	width: 80%;
+	min-width: 500px;
+}
+
+nav
+{
+}
+
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ul li
+{
+	margin: 0;	
+	background: #444444;
+	color: #ffffff;
+	display: inline;
+}
+
+header
+{
+	width: 100%;
+	height: 120px;
+}
+
+#container #main #left
+{
+	width: 40%;
+	float: left;
+}
+
+#container #main #right
+{
+	width: 60%;
+	float: left;
+}
+
+footer
+{
+
+}
