@@ -83,11 +83,19 @@ header #title
 	text-align: right;
 	z-index: 100;
 }
+#header_img_area{
+  position: relative;
+	width: 960px;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 #portfolio_cycler
 {
 	position: relative;
 	width: 960px;
+	height: 250px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -98,6 +106,17 @@ header #title
 }
 #portfolio_cycler img.active{
 	z-index: 3;
+}
+#headline {
+  position: absolute;
+  top: 182px;
+  left: 1px;
+  z-index: 5;
+  font-size: 74px;
+  font-weight: bold;  
+  letter-spacing: 8px;
+  text-align: center;
+  color: #ff8900;
 }
 
 #sponsors
