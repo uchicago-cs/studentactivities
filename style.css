@@ -9,18 +9,20 @@ html, body
 
 #container
 {
-	width: 80%;
+	width: 100%;
 	min-width: 500px;
 }
 
 nav
 {
+	width: 100%;
 }
 
 nav ul
 {
 	margin: 0;
 	padding: 0;
+	background: #444444;
 	list-style-type: none;
 }
 
@@ -34,23 +36,45 @@ nav ul li
 
 header
 {
+	background: url(img/tiny_grid.png);
+	margin: 0;
+	padding: 0;
+	height: 250px;
+}
+
+#portfolio_cycler
+{
+	position: relative;
+}
+#portfolio_cycler img
+{
+	position: absolute;
+	z-index: 1
+}
+#portfolio_cycler img.active{
+	z-index: 3
+}
+
+#sponsors
+{
+	background: #000000;
 	width: 100%;
-	height: 120px;
 }
 
-#container #main #left
+#container #main div
 {
-	width: 40%;
+	width: 48%;
+	padding: 1%;
 	float: left;
-}
-
-#container #main #right
-{
-	width: 60%;
-	float: left;
+	text-align: justify;
+	text-justify: auto;
 }
 
 footer
 {
-
+	width: 100%;
+	background: #111111;
+	color: #ffffff;
+	text-align: center;
+	float: left;
 }
