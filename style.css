@@ -239,3 +239,22 @@ a:hover {
   margin-top: 0px;
   padding-top: 0px;
 }
+
+/* these classes are for laying out the homepage buttons side by side */
+
+#button_div {
+  width: 100%;
+  float: left;
+}
+.left {
+  display: block;
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
+.right {
+
+  float: left;
+  width: 48%;
+  padding: 1%;
+}
