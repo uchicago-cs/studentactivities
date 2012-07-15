@@ -43,10 +43,17 @@ html, body
 }
 
 #sponsors_link {
-  width: 100%;
+  width: 50%;
   text-align: right;
   float: left;
-  margin-top: 30px;
+  margin-top: 50px;
+}
+
+#donors_text {
+  width: 50%;
+  float: left;
+  text-align: left;
+  margin-top: 50px;
 }
 
 #sponsor_list
@@ -181,7 +188,6 @@ p {
   color: #333;
   font-size: 18px;
   line-height: 130%;
-  text-indent: 20px;
 }
 
 #left {
@@ -283,3 +289,4 @@ a:hover {
   width: 48%;
   padding: 1%;
 }
+
