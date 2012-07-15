@@ -1,0 +1,10 @@
+<nav class="twelvecol last">
+  <ul>
+    <% pages.each do |page| %>
+      <% maybe_active = !page[:id].nil? && data.page.id == page[:id] ? 'active' : '' %>
+      <li class="<%= maybe_active %>">
+        <a href="<%= page[:href] %>" title="<%= page[:name] %>"><%= page[:name] %></a>
+      </li>
+    <% end %>
+  </ul>
+</nav>
