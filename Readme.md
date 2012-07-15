@@ -1,1 +1,1 @@
-`Computer Science Student Activities Committee website`
+Computer Science Student Activities Committee website
