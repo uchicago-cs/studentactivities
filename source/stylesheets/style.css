@@ -1,20 +1,16 @@
-html, body
-{
+html, body {
 	margin: 0;
 	padding: 0;
-	background: url(img/graphy.png);
 	font-family: 'Karla', sans-serif;
 }
 
-#container
-{
+#container {
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#sponsors
-{
+#sponsors {
 	position: relative;
 	padding: 0;
   margin-top: 10px;
@@ -26,8 +22,7 @@ html, body
 	float: left;
 }
 
-#sponsors_bg
-{
+#sponsors_bg {
 	width: 960;
 	height: 50px;
 	margin-top: 10px !important;
@@ -56,8 +51,7 @@ html, body
   margin-top: 50px;
 }
 
-#sponsor_list
-{
+#sponsor_list {
 	position: absolute;
 	height: 50px;
 	top: 0;
@@ -68,36 +62,33 @@ html, body
 	z-index: 2;
 }
 
-#sponsors ul li, #sponsors li, .sponsor_logo
-{
+#sponsors ul li, #sponsors li, .sponsor_logo {
 	margin: 0 20px 0 20px;
 	display: inline;
 }
 
-nav
-{
+nav {
 	width: 100%;
 }
 
-nav ul
-{
+nav ul {
 	margin: 0px;
 	padding-bottom: 18px;
 	padding-top: 18px;
 	padding-left: 0px;
 	/*background: #444444;*/
 	list-style-type: none;
-	
 }
+
 .lifirst{
   padding-left: 0px !important;
 }
+
 .lilast{
   border-right: none !important;
 }
 
-nav ul li
-{
+nav ul li {
 	margin: 0;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -108,13 +99,11 @@ nav ul li
 	border-right: 3px solid #ccc;
 }
 
-nav ul li a
-{
+nav ul li a {
 	color: #333 !important;
 }
 
-nav ul li a:hover
-{
+nav ul li a:hover {
 	color: #ccc !important;
 }
 
@@ -123,14 +112,13 @@ nav ul li:hover{
   color: #ccc !important;
 }
 
-header
-{
+header {
 	margin: 0;
 	padding: 0;
 	height: 250px;
 }
 
-#header_img_area{
+#header_img_area {
   float: left;
   position: relative;
 	width: 960px;
@@ -140,22 +128,23 @@ header
 	border-top: 10px solid #41AFE4;
 }
 
-#portfolio_cycler
-{
+#portfolio_cycler {
 	position: relative;
 	width: 960px;
 	height: 250px;
 	margin-left: auto;
 	margin-right: auto;
 }
-#portfolio_cycler img
-{
+
+#portfolio_cycler img {
 	position: absolute;
 	z-index: 1;
 }
-#portfolio_cycler img.active{
+
+#portfolio_cycler img.active {
 	z-index: 3;
 }
+
 #headline {
   position: absolute;
   top: 182px;
@@ -167,20 +156,18 @@ header
   text-align: center;
   color: #ff8900;
 }
+
 #main {
   float: left;
 }
-#container #main div
-{
+
+#container #main div {
 	width: 48%;
 	padding: 1%;
 	float: left;
-	text-align: justify;
-	text-justify: auto;
 }
 
-footer
-{
+footer {
 	width: 100%;
 	background: url(img/graphy.png);
 	text-align: center;
@@ -195,14 +182,11 @@ h1 {
   text-align: left;
   background-color: transparent !important;
 }
+
 p {
   color: #333;
   font-size: 18px;
   line-height: 130%;
-}
-
-#left {
-  /* border-right: 1px solid #ccc;*/
 }
 
 .events_list {
@@ -210,18 +194,17 @@ p {
   margin-left: 0px;
   padding-left: 0px;
 }
+
 .events_list_item {
   color: #333;
   margin-bottom: 10px;
   margin-left: 10px;
 }
+
 .events_paragraph {
   color: #333;
   margin-left: 10px;
   text-indent: 0px !important;
-}
-
-#right {
 }
 
 .donate_button {
@@ -252,10 +235,12 @@ p {
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
 	background-color:#dfdfdf;
 }
+
 .donate_button:active {
 	position:relative;
 	top:1px;
 }
+
 .technical_students {
   font-size:30px !important;
 }
@@ -264,6 +249,7 @@ a {
   color: #339;
   text-decoration: none;
 }
+
 a:hover {
   cursor: pointer;
   color: #66f;
@@ -281,23 +267,3 @@ a:hover {
   margin-top: 0px;
   padding-top: 0px;
 }
-
-/* these classes are for laying out the homepage buttons side by side */
-
-#button_div {
-  width: 100%;
-  float: left;
-}
-.left {
-  display: block;
-  float: left;
-  width: 48%;
-  padding: 1%;
-}
-.right {
-
-  float: left;
-  width: 48%;
-  padding: 1%;
-}
-
