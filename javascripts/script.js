@@ -1,0 +1,1 @@
+function cycleImages(){var e=$("#portfolio_cycler .active"),t=e.next().length>0?e.next():$("#portfolio_cycler img:first");t.css("z-index",2),e.fadeOut(1500,function(){e.css("z-index",1).show().removeClass("active"),t.css("z-index",3).addClass("active")})}$(document).ready(function(){setInterval("cycleImages()",7e3)});
