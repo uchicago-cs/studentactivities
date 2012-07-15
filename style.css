@@ -107,6 +107,17 @@ nav ul li
 	display: inline;
 	border-right: 3px solid #ccc;
 }
+
+nav ul li a
+{
+	color: #333 !important;
+}
+
+nav ul li a:hover
+{
+	color: #ccc !important;
+}
+
 nav ul li:hover{
   cursor: pointer;
   color: #ccc !important;
@@ -250,12 +261,12 @@ p {
 }
 
 a {
-  color: #333;
+  color: #339;
   text-decoration: none;
 }
 a:hover {
   cursor: pointer;
-  color: #ccc;
+  color: #66f;
 }
 
 .no_bottom_border{
