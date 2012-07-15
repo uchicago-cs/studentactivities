@@ -15,33 +15,56 @@ html, body
 
 #sponsors
 {
-	background: #ffffff;
-	border: 1px solid #ccc;
-	border-bottom-right-radius: 15px;
-	border-top-right-radius: 15px;
-	box-shadow: 3px 3px 4px #ccc;
-	clear: both;
-	padding: 15px 3px 15px 0px;
-	width: 121px;
-	margin-bottom: 10px;
-	text-align: center;
-	position: fixed;
-	top: 25%;
+	position: relative;
+	padding: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+	height: 50px;
+	width: 960px;
+	float: left;
 }
 
-.sponsor_logo {
+#sponsors_bg
+{
+	width: 960;
+	height: 50px;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	/* bottom: 50px;*/
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	opacity: 0.65;
+	border-radius: 6px;
+	text-align: right;
+}
+
+#sponsors_link {
+  width: 100%;
+  text-align: right;
   float: left;
-  width: 100px;
-  padding-right: 20px;
+  margin-top: 30px;
 }
 
-.sponsor_logo img {
-  margin-left: auto;
+#sponsor_list
+{
+	position: absolute;
+	height: 50px;
+	top: 0;
+	padding: 0;
+	display: inline;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	z-index: 2;
 }
 
-.sponsor_logo:hover {
-  border-right: 5px solid #ff8900;
-  cursor: pointer;
+#sponsors ul li, #sponsors li, .sponsor_logo
+{
+	margin: 0 20px 0 20px;
+	display: inline;
 }
 
 nav
@@ -93,7 +116,7 @@ header
   float: left;
   position: relative;
 	width: 960px;
-	height: 260px;
+	height: 250px;
 	margin-left: auto;
 	margin-right: auto;
 	border-top: 10px solid #41AFE4;
@@ -126,7 +149,9 @@ header
   text-align: center;
   color: #ff8900;
 }
-
+#main {
+  float: left;
+}
 #container #main div
 {
 	width: 48%;
@@ -156,6 +181,7 @@ p {
   color: #333;
   font-size: 18px;
   line-height: 130%;
+  text-indent: 20px;
 }
 
 #left {
@@ -256,17 +282,4 @@ a:hover {
   float: left;
   width: 48%;
   padding: 1%;
-}
-
-/* table formatting */
-table {
-  width: 100%;
-}
-th {
-  border-bottom: 1px solid black;
-  width: 50%;
-}
-
-td {
-  padding-bottom: 10px;
 }
