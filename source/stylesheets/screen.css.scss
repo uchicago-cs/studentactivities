@@ -107,19 +107,17 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 
     img {
-      display: none;
       position: absolute;
       z-index: 0;
       max-width: 100%;
 
       &.active {
-        display: block;
         z-index: 10000 !important;
         @include opacity(1);
       }
 
       @include opacity(0);
-      @include transition-property(opacity);
+      @include transition-property(opacity, display);
       @include transition-duration(1.2s);
     }
   }
