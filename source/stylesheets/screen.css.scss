@@ -1,10 +1,10 @@
-@import '1140'; // Actually, capped at 960px
-@import 'normalize';
-@import 'compass/css3';
+@import '1140';          // Actually, capped at 960px
+@import 'normalize';     //
+@import 'compass/css3';  //
+@import "sassy-buttons"; // http://jaredhardy.com/sassy-buttons/
 
 $blue: #41AFE4;
 $sans-fonts: Helvetica, Arial, Verdana, sans-serif;
-
 
 @mixin karla {
   font-family: 'Karla', $sans-fonts;
@@ -13,13 +13,23 @@ $sans-fonts: Helvetica, Arial, Verdana, sans-serif;
 html {
   font-size: 12px;
   line-height: 18px;
-  background: white url('../images/graph.png');
+  background: white url('../images/texture.jpg');
 }
 
 body {
   font-size: 1em;
   line-height: 1.5em;
   padding-bottom: 1.5em;
+}
+
+a {
+  &, &:link {
+    text-decoration: none;
+    color: $blue;
+  }
+  &:hover { text-decoration: underline; }
+  &:active { color: #1def85; }
+  &:visited { color: #c046ff; }
 }
 
 nav ul, nav ol {
@@ -53,15 +63,17 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   li a {
-  	color: #333;
   	text-decoration: none;
+  	&, &:visited { color: #333; }
   	&:hover { color: #ccc; }
+  	&:active { color: #aaa; }
   }
 }
 
 
 #page-title, #cycler, #sponsors, #main {
-  background-color: rgba(#fff, 0.6);
+  background-color: #fff;
+  background-color: rgba(#fff, 0.75);
 }
 
 #page-title {
@@ -90,9 +102,32 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5em;
   padding: 1em 0;
 
-  > section > * {
+  > section > *,
+  > aside > * {
     padding-left: 1em;
     padding-right: 1em;
+  }
+}
+
+
+.button {
+  color: white !important;
+  height: 1.5em;
+  line-height: 1.5em !important;
+  @include karla;
+  @include sassy-button('simple', 0.3em, 1em);
+}
+
+#hold-an-event, #donate-now {
+  text-align: center;
+
+  .button {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.25em !important;
+    height: 2.5em;
+    line-height: 2.5em !important;
+    @include sassy-button('simple', 0.3em, 1em);
   }
 }
 

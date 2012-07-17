@@ -34,8 +34,10 @@
     </header>    
 
     <div id="cycler" class="row">
+      <% classes = 'active' %>
       <% (0..9).each do |i| %>
-        <img src="images/cycler/<%= '%02d' % [i] %>.jpg" alt="" />
+        <img class="<%= classes %>" src="images/cycler/<%= '%02d' % [i] %>.jpg" alt="" />
+        <% classes = '' %>
       <% end %>
     </div>
 

@@ -14,9 +14,7 @@ title: Donate
   </header>
   <div class="content">
     <p>You can donate to the Computer Science Student Activities Fund through the University's secure online giving site, where you can make your donation using your Visa, Mastercard, American Express, or Discover Card.</p>
-    <% link_to './donate.html' do %>
-      <button>Donate Online</button>
-    <% end %>
+    <%= link_to 'Donate Online', './donate.html', class: 'button' %>
     <p>If you wish to make your gift using another method, including mailing a check, please send an e-mail to <a href="mailto:donations@studentactivities.cs.uchicago.edu">donations@studentactivities.cs.uchicago.edu</a> and we will be happy to assist you.</p>
     <p>Your donation will be used to fund student events on campus, including hack nights, hackathons, tech talks, and programming contests. The Student Activities Fund is also used to purchase hardware and capital improvements for technical students on campus. This is a sample of the kind of hardware that your donation can help purchase:</p>
     <table>
@@ -42,8 +40,6 @@ title: Donate
     <p>If you are a company that wants to recruit technical students on campus, sponsoring an event is a great way to reach out to our students. Your brand name will be associated with the event, and we encourage you to send representatives to attend the event and mingle with our students.</p>
     <p>We currently offer sponsorship for three types of events: hack nights (minimum sponsorship of $500), hackathons (minimum sponsorship of $1000, plus prizes), and programming contests (sponsorship amount varies depending on type of contest).</p>
     <p>To sponsor an event, or inquire about holding an event on campus (such as a tech talk), please see our Holding an Event on Campus page. The actual donation will be handled as part of the organization of the event.</p>
-    <% link_to './events.html' do %>
-      <button>Sponsor an Event</button>
-    <% end %>
+    <%= link_to 'Sponsor an Event', './events.html', class: 'button' %>
   </div>
 </section>
