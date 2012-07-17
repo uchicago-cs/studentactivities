@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
   	margin: 0;
   	padding: 0 0.5em;
   	line-height: 1.25em;
-  	display: inline-block;
+  	display: inline;
   	border-right: 3px solid #ccc;
     &:first-child { padding-left: 0; }
   	&:last-child  { border-right: 0; padding-right: 0; }
@@ -104,15 +104,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     min-height: 250px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
 
     img {
+      display: none;
       position: absolute;
       z-index: 0;
       max-width: 100%;
 
       &.active {
-        visibility: visible;
         display: block;
         z-index: 10000 !important;
         @include opacity(1);
