@@ -1,0 +1,161 @@
+@import '1140';          // Actually, capped at 960px
+@import 'normalize';     //
+@import 'compass/css3';  //
+@import "sassy-buttons"; // http://jaredhardy.com/sassy-buttons/
+
+$blue: #41AFE4;
+$sans-fonts: Helvetica, Arial, Verdana, sans-serif;
+
+@mixin karla {
+  font-family: 'Karla', $sans-fonts;
+}
+
+html {
+  font-size: 12px;
+  line-height: 18px;
+  background: white url('../images/texture.jpg');
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+a {
+  &, &:link {
+    text-decoration: none;
+    color: $blue;
+  }
+  &:hover { text-decoration: underline; }
+  &:active { color: #1def85; }
+  &:visited { color: #c046ff; }
+}
+
+nav ul, nav ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 0;
+  @include karla;
+}
+
+#page-header nav,
+#page-footer nav {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-align: center;
+  @include karla;
+
+  li {
+  	margin: 0;
+  	padding: 0 0.5em;
+  	line-height: 1.25em;
+  	display: inline;
+  	border-right: 3px solid #ccc;
+    &:first-child { padding-left: 0; }
+  	&:last-child  { border-right: 0; padding-right: 0; }
+  }
+
+  li a {
+  	text-decoration: none;
+  	&, &:visited { color: #333; }
+  	&:hover { color: #ccc; }
+  	&:active { color: #aaa; }
+  }
+}
+
+
+#page-title, #cycler, #sponsors, #main {
+  background-color: #fff;
+  background-color: rgba(#fff, 0.75);
+}
+
+#page-title {
+  line-height: 2em;
+  padding: 0.25em 0;
+  text-align: center;
+}
+
+#cycler {
+  display: none;
+  border-top: 0.5em solid $blue;
+}
+
+#sponsors {
+  padding: 0.75em 0 0;
+}
+
+#sponsors ul {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+#main {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  padding: 1em 0;
+
+  > section > *,
+  > aside > * {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+
+.button {
+  color: white !important;
+  height: 1.5em;
+  line-height: 1.5em !important;
+  @include karla;
+  @include sassy-button('simple', 0.3em, 1em);
+}
+
+#hold-an-event, #donate-now {
+  text-align: center;
+
+  .button {
+    margin: 0 auto;
+    width: 50%;
+    font-size: 1.25em !important;
+    height: 2.5em;
+    line-height: 2.5em !important;
+    @include sassy-button('simple', 0.3em, 1em);
+  }
+}
+
+
+@media handheld, only screen and (min-width: 768px) {
+  #cycler {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+    margin: 0 auto;
+    text-align: left;
+
+    img {
+      position: absolute;
+      z-index: 0;
+      max-width: 100%;
+
+      &.active {
+        z-index: 10000 !important;
+        @include opacity(1);
+      }
+
+      @include opacity(0);
+      @include transition-property(opacity, display);
+      @include transition-duration(1.2s);
+    }
+  }
+
+  h1, h2, h3, h4, h5, h6 { text-align: left; }
+}
