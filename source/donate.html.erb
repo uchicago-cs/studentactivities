@@ -13,8 +13,10 @@ title: Donate
     <h2>Donate Online</h2>
   </header>
   <div class="content">
-    <p>You can donate to the Computer Science Student Activities Fund through the University's secure online giving site, where you can make your donation using your Visa, Mastercard, American Express, or Discover Card.</p>
-    <%= link_to 'Donate Online', './donate.html', class: 'button' %>
+    <p>You can donate to the Computer Science Student Activities Fund through the University's secure online giving site, where you can make your donation using your Visa, Mastercard, American Express, or Discover Card. <em>To make sure your donation is correctly routed to the fund, you must specify <strong>"Computer Science Student Activites Fund (Account 6-32184)"</strong> in the Special Instructions field of the donation form.</em></p>
+
+    <p class="content"><%= link_to 'Donate Online Now', 'https://www.kintera.org/site/c.mjJXJ7MLIsE/b.4668703/k.BE96/Make_a_gift_online/apps/ka/sd/donorcustom.asp?BeneficiaryID=377554', class: 'button' %></p>
+
     <p>If you wish to make your gift using another method, including mailing a check, please send an e-mail to <a href="mailto:donations@studentactivities.cs.uchicago.edu">donations@studentactivities.cs.uchicago.edu</a> and we will be happy to assist you.</p>
     <p>Your donation will be used to fund student events on campus, including hack nights, hackathons, tech talks, and programming contests. The Student Activities Fund is also used to purchase hardware and capital improvements for technical students on campus. This is a sample of the kind of hardware that your donation can help purchase:</p>
     <table>
@@ -27,7 +29,7 @@ title: Donate
       <tr><td>$2,000</td><td>Makerbot</td></tr>
       <tr><td>$2,500</td><td>Laser cutter</td></tr>
     </table>
-    <p>All donors are listed permanently on our Donors page. Major donors (those giving at least $2,500 within the last year) will additionally be listed on the front page of the Student Activities Committee website.</p>
+    <p>All donors are listed permanently on our <%= link_to 'Donors', './donors.html' %> page. Major donors (those giving at least $2,500 within the last year) will additionally be listed on the front page of the Student Activities Committee website.</p>
     <p>If you make a donation through the university's giving site, and wish to be listed on our Donors page, please send an e-mail to <a href="mailto:donations@studentactivities.cs.uchicago.edu">donations@studentactivities.cs.uchicago.edu</a> with your name, as given on the university's giving site (you do not need to include your donation amount in this e-mail). If you are a corporate donor, and want your company name to be listed, please send us the company name, URL, and, optionally, a logo. If you are a University of Chicago alumnus/alumna, please let us know your degree and year of graduation.<p>
   </div>
 </section>
