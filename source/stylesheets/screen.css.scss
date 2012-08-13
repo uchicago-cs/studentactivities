@@ -41,9 +41,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   line-height: 1.25em;
   margin: 0;
-  padding: 0;
+  padding: 0.25em 0;
   @include karla;
 }
+
+p {
+  +h1, +h2, +h3, +h4, +h5, +h6 {
+    padding-top: 1em;
+  }
+}
+
 
 #page-header nav,
 #page-footer nav {
@@ -77,14 +84,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-title {
+  font-size: 2.5em;
   line-height: 2em;
   padding: 0.25em 0;
   text-align: center;
+  color: #fff;
+  background-color: $blue;
+  font-weight: bold;
 }
 
 #cycler {
   display: none;
-  border-top: 0.5em solid $blue;
+  // border-top: 0.5em solid $blue;
 }
 
 #sponsors {
@@ -115,11 +126,13 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .button {
+  font-size: 1.125em !important;
   color: white !important;
   height: 1.5em;
   line-height: 1.5em !important;
   @include karla;
   @include sassy-button('simple', 0.3em, 1em);
+  &:hover { text-decoration: none; }
 }
 
 #hold-an-event, #donate-now {
@@ -132,6 +145,42 @@ h1, h2, h3, h4, h5, h6 {
     height: 2.5em;
     line-height: 2.5em !important;
     @include sassy-button('simple', 0.3em, 1em);
+  }
+}
+
+.centered { text-align: center; }
+
+#donations {
+  margin: 0 auto;
+  text-align: left;
+  $inside-border: 1px solid #e9e9e9;
+  $outside-border: 1px solid #ccc;
+
+  td, th {
+    &:first-child {
+      font-weight: bold;
+      text-align: right;
+      border-right: $inside-border;
+    }
+    padding: 0.25em 0.75em;
+  }
+
+  tr {
+    background-color: #fff;
+    border-bottom: $inside-border;
+    border-left: $outside-border;
+    border-right: $outside-border;
+    &:nth-child(even) { background-color: lighten($blue, 38%); }
+    &:last-child { border-bottom: $outside-border; }
+  }
+
+  thead tr {
+    $dblue: lighten($blue, 10%);
+    $lblue: lighten($blue, 18%);
+    background-color: lighten($blue, 25%);
+    border: 1px solid $dblue !important;
+    border-bottom: 1px solid $lblue !important;
+    th { border-color: $lblue !important; }
   }
 }
 
