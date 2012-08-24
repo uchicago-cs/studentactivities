@@ -39,6 +39,14 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 
+  function recordOutboundLink(link) {
+    try {
+      _gaq.push(['_trackEvent', 'Outbound Links', 'click', link.href ]);
+      setTimeout('document.location = "' + link.href + '"', 100)
+    }catch(err){}
+  }
+
+
 </script>
 
   </head>
